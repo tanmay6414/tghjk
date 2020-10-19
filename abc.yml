@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: django
-          image: tanmay8898/django
+          image: $DOCKER_IMAGE_NAME:$BUILD_NUMBER
           ports:
             - containerPort: 8080
