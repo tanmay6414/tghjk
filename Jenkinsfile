@@ -16,7 +16,7 @@ pipeline {
                 milestone(1)
                 kubernetesDeploy(
                     kubeconfigId: 'kubeconfig',
-                    configs: 'abc.yml','service1.yaml',
+                    configs: 'abc.yml',
                     enableConfigSubstitution: true
                 )
             }
