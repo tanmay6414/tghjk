@@ -3,9 +3,11 @@ from django.templatetags.static import static
 from django.shortcuts import render
 from boto3.s3.transfer import S3Transfer
 import boto3
+import os
 
 
 def index(request):
+    print("name111", os.environ.get('USER'))
     return render(request, 'filedata/a.html')
 
 def abc(request):
